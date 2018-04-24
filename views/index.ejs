@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="id">
     <title>Advanced React Applicatin Example</title>
+    <script>
+        window.initialData = <%- JSON.stringify(initialData) -%>
+    </script>
 </head>
 
 <body>
     <div id="root">
-        <%- initialContent -%>
+        <%- initialMarkup -%>
     </div>
 
     <script src="/bundle.js" charset="utf-8"></script>
