@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev_mac": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
-    "dev_windows": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
+    "dev_windows": "set NODE_PATH=./lib&& nodemon --watch ./lib --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -52,6 +52,8 @@
     "babel-preset-stage-2": "^6.24.1",
     "ejs": "^2.5.9",
     "express": "^4.16.3",
+    "lodash.debounce": "^4.0.8",
+    "lodash.pickby": "^4.6.0",
     "path": "^0.12.7",
     "pm2": "^2.10.2",
     "prop-types": "^15.6.1",
